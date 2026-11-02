@@ -1,0 +1,6 @@
+{
+  "name": "LoveInStore Learn - Trainer Management Web Panel",
+  "description": "Enterprise Training Operations Management System for LoveInStore retail and FMCG field execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

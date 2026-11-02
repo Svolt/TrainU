@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  /* Monetra Design Tokens */
+  --color-canvas: #F1F2F5;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F8F9F8;
+  --color-surface-muted: #F3F4F3;
+
+  --color-text-primary: #17191B;
+  --color-text-secondary: #73777D;
+  --color-text-muted: #A1A5AA;
+
+  --color-border-subtle: #ECEEF0;
+
+  --color-accent: #A6F52F;
+  --color-accent-soft: #E9FBD1;
+
+  --color-positive: #4DBB70;
+  --color-negative: #E56C6C;
+  --color-info: #4D91D8;
+  --color-purple: #9161C8;
+  --color-orange: #E9A84C;
+
+  /* Dark Material Tokens */
+  --color-dark-surface: #101411;
+  --color-dark-raised: #1A211A;
+  --color-dark-highlight: #293629;
+  --color-dark-text: #FFFFFF;
+  --color-dark-muted: #B8C0B8;
+
+  /* Typography */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 10px rgba(25, 35, 45, 0.035);
+  --shadow-medium: 0 6px 20px rgba(25, 35, 45, 0.055);
+  --shadow-floating: 0 10px 35px rgba(25, 35, 45, 0.08);
+
+  /* Motion */
+  --motion-fast: 120ms;
+  --motion-standard: 180ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Monetra Button Utilities */
+.monetra-btn-primary {
+  background-color: #A6F52F;
+  color: #17191B;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: 0;
+  transition: all 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.monetra-btn-primary:hover {
+  background-color: #95E622;
+  transform: translateY(-0.5px);
+}
+
+.monetra-btn-secondary {
+  background-color: #FFFFFF;
+  color: #17191B;
+  border: 1px solid #ECEEF0;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.monetra-btn-secondary:hover {
+  background-color: #F8F9F8;
+  border-color: #DFE2E5;
+}
+
+/* Soft card shadow */
+.monetra-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECEEF0;
+  box-shadow: 0 2px 10px rgba(25, 35, 45, 0.035);
+  border-radius: 16px;
+}
+
+.monetra-card-hover {
+  transition: all 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.monetra-card-hover:hover {
+  box-shadow: 0 6px 20px rgba(25, 35, 45, 0.055);
+  border-color: #DFE2E5;
+}
+
+/* Tabular figures for data tables & KPIs */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
